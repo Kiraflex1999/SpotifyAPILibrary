@@ -1,10 +1,13 @@
-﻿namespace TestApp
+﻿using SpotifyAPILibrary;
+
+namespace TestApp
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            AccessToken.RequestUserToken("user-read-email user-read-private playlist-read-private");
+            Console.ReadLine();
         }
     }
 }
